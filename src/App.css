@@ -72,6 +72,10 @@ header>button {
     text-align: center;
     font-size: 25px;
     padding-bottom: 15px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .img-gift {
@@ -181,6 +185,7 @@ span {
     padding: 1em;
     z-index: 10;
     position: relative;
+    filter: drop-shadow(0 0 10px #000000);
 }
 .delete_btn-container{
       display: flex;
@@ -265,6 +270,7 @@ form {
     flex-direction: column;
     width: 400px;
     gap: 1em;
+    filter: drop-shadow(0 0 10px #000000);
 }
 
 form>section {
@@ -309,8 +315,8 @@ button{
     transition:  background-color 0.5s ,transform 0.1s;
 }
 .btn_global:hover{
-    background-color: #555a8892
-}
-.btn_global:active{
-    transform: scale(0.98);
+    background-color: #555a8892;
+    filter: drop-shadow(0 0 5px #883effb5);
+    transform: scale(1.05);
+    transition: transform 0.3s ; 
 }
